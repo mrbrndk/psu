@@ -1,0 +1,9 @@
+#!/bin/bash
+if [ -n "$1" ] && [ -n "$2" ] && [ -n "$3" ]
+then
+	res=`expr $1 + $2`
+	res=`expr $res + $3`
+	echo "$1 + $2 + $3 = $res"
+else
+	echo Не указаны аргументы!
+fi

@@ -1,0 +1,13 @@
+#!/bin/bash
+if [ -n "$1" ]
+then
+	if [ -d "$2" ] && [ -d "$3" ] && [ -d "$4" ]
+	then
+		find $2 -depth -name $1 -print -exec cp -r {} $3 \;
+		find $2 -depth -name $1 -print -exec cp -r {} $4 \;
+	else
+		echo Не указан путь!
+	fi
+else
+	echo Не указана маска!
+fi

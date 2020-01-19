@@ -1,0 +1,7 @@
+#!/bin/bash
+if [ -d "$1" ]
+then
+	find $1 -type f -executable ! -path $0 -print -exec sh {} \;
+else
+	echo Не указан каталог!
+fi
