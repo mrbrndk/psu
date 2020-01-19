@@ -12,6 +12,13 @@
 *.sln
 *.vcxproj
 *.vcxproj.filters
+*.vsdx
+*.wav
+*.ico
+*.bmp
+*.jpg
+*.djvu
+
 
 ## Ignore Visual Studio temporary files, build results, and
 
